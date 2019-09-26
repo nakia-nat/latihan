@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   int jarak, waktu, kecepatan;
+   jarak=750; 
+   waktu=20; 
+   cout<<"berapa kecepatan? \n";
+   cout<<"jarak: "<<jarak<<'\n';
+   cout<<"waktu: "<<waktu<<'\n';
+   
+   kecepatan=jarak/waktu;
+   cout<<"kecepatannya adalah  "<<kecepatan;
+}
