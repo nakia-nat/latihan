@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+   char nama[20];
+   cout<<"masukkan nama anda: ";
+   cin>>nama;
+   int usia;
+   cout<<"masukkan usia anda: ";
+   cin>>usia;
+   
+  
+   if(usia>=17){
+       cout<<"anda diterima diuniversitas paramadina"<<endl;
+       return 0;
+   }
+  
+     else (usia<=17);
+     {
+       cout<<"anda tidak diterima diuniversitas paramadina"<<endl;
+       return 0;
+   }
+ 
+}
