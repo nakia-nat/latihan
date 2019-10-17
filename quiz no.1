@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int jam,menit,detik,waktu_awal,waktu_akhir;
+    cout<<"masukkan jam: ";
+    cin>>jam;
+    cout<<"masukkan menit: ";
+    cin>>menit;
+    cout<<"masukkan detik: ";
+    cin>>detik;
+    cout<<"waktu awal="<<jam<<":"<<menit<<":"<<detik<<endl;
+    detik=detik+1;
+    cout<<"---------------------------"<<endl;
+    cout<<"setelah ditambah 1 detik:"<<detik<<endl;
+    if(detik==60){
+        menit=menit+1;
+        detik=0;
+        if(menit==60){
+            jam=jam+1;
+            menit=0;
+            if(jam==24){
+                jam=0;
+                cout<<"waktu akhir= "<<jam<<":"<<menit<<":"<<detik;
+            }
+            cout<<"waktu akhir= "<<jam<<":"<<menit<<":"<<detik;
+        }
+        cout<<"waktu akhir= "<<jam<<":"<<menit<<":"<<detik;
+    }
+    cout<<"waktu akhir= "<<jam<<":"<<menit<<":"<<detik;
+    return 0;
+}
