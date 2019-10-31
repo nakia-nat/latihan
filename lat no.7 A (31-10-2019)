@@ -1,0 +1,38 @@
+int x;
+    a :
+    cout<<endl;
+    cout<<"mengkonversi Angka ke Bilangan Romawi"<<endl;
+    cout<<"Masukkan Angka : ";
+    cin>>x;
+
+    if(x>=10){
+        cout<<"X";
+        x=x-10;
+    }
+    if(x>=9){
+        cout<<"IX";
+        x=x-9;
+    }
+    if(x>=5){
+        cout<<"V";
+        x=x-5;
+    }
+    if(x>=4){
+        cout<<"IV";
+        x=x-4;
+    }
+    if(x>=3){
+        cout<<"III";
+        x=x-3;
+    }
+    if(x>=2){
+        cout<<"II";
+        x=x-2;
+    }
+    if(x>=1){
+        cout<<"I";
+        x=x-1;
+    }
+
+    goto a;
+}
