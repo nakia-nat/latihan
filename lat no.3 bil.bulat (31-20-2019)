@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+   int p, q, r, x;
+   cout<<"Masukkan p : ";
+   cin>>p;
+   cout<<"Masukkan q : ";
+   cin>>q;
+   cout<<"Masukkan r : ";
+   cin>>r;
+   if(q < p){
+      x = q;
+      q = p;
+      p = x;
+   }
+   if(r < p){
+      x = r;
+      r = p;
+      p = x;
+   }
+   if(r < q){
+      x = r;
+      q = r;
+      r = x;
+   }
+   cout<<"Bilangan setelah diurutkan : "<<p<<" "<<q<<" "<<r;
+
+   
+}
