@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+void tukar(int a, int b);
+
+void tukar(int a, int b){
+    int c;
+    c = a;
+    a = b;
+    b = c;
+    cout<<"nilai a =  "<< a <<" ,nilai b = "<< b << endl;
+}
+
+int main () {
+  int a,b;
+  cout<<"nilai a = ";
+  cin>>a;
+  cout<<"nilai b = ";
+  cin>>b;
+  cout<<"nilai a = "<< a <<" ,nilai b = "<< b <<endl;
+  tukar(a,b);
+  return 0;
+  
+  
+}
+   
